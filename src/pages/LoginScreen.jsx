@@ -11,7 +11,7 @@ function LoginScreen() {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
 
-        <div className="flex flex-col gap-3 w-full">
+        <div className="sigin-inputs flex flex-col gap-3 w-full">
             <Input placeholder="Enter email address" label="Email Address" />
             <Input placeholder="Enter password" label="Password" />
             <Button text="Login" bgColor="bg-gray-300" color="text-white" />
