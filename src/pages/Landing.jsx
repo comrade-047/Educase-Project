@@ -11,6 +11,7 @@ function LandingPage() {
         >
             Welcome to PopX
         </h1>
+
         <p 
             className="text-gray-600 mb-6"
         >
@@ -18,8 +19,10 @@ function LandingPage() {
         </p>
 
         <div className="buttons flex flex-col gap-3 w-full">
+
           <Button text="Create Account" bgColor="bg-purple-600" color="text-white" />
           <Button text="Already Registered? Login" bgColor="bg-purple-300" color="text-black" />
+          
         </div>
       </div>
     </div>
