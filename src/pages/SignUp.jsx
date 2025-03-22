@@ -4,49 +4,47 @@ import Input from "../components/Input/Input";
 function SignUp(){
 
     return (
-        <>
-            <div className="flex flex-col items-center h-screen p-6 ">
+        <div className="flex flex-col items-center h-screen p-6 ">
 
-                <div className="flex flex-col w-full flex-grow ">
+            <div className="flex flex-col w-full flex-grow ">
 
-                    <h1 
-                        className="text-3xl font-semibold mb-2"
-                    >   
-                        Create your PopX account
-                    </h1>
+                <h1 
+                    className="text-3xl font-semibold mb-2"
+                >   
+                    Create your PopX account
+                </h1>
+                
+                <div 
+                    className="account-info-inputs flex flex-col gap-3 flex-grow "
+                >
+                    <Input placeholder="" label="Full Name" type="text"/>
+                    <Input placeholder="" label="Phone number" type="number" />
+                    <Input placeholder="" label="Email Address" type="email" />
+                    <Input placeholder="" label="Password" type="password" />
+                    <Input placeholder="" label="Company name" type="text" />
                     
-                    <div 
-                        className="account-info-inputs flex flex-col gap-3 flex-grow "
+                    <div
+                        className="flex flex-col gap-2 mt-3"
                     >
-                        <Input placeholder="" label="Full Name" type="text"/>
-                        <Input placeholder="" label="Phone number" type="number" />
-                        <Input placeholder="" label="Email Address" type="email" />
-                        <Input placeholder="" label="Password" type="password" />
-                        <Input placeholder="" label="Company name" type="text" />
-                        
-                        <div
-                            className="flex flex-col gap-2 mt-3"
-                        >
-                            <label className=" font-medium">Are you an agency?</label>
-                            <div className="flex items-center gap-4">
+                        <label className=" font-medium">Are you an agency?</label>
+                        <div className="flex items-center gap-4">
 
-                                <label className="flex items-center gap-2">
-                                    <input type="radio" name="agency" value="Yes" defaultChecked className="accent-purple-600" />
-                                    Yes
-                                </label>
-                                <label className="flex items-center gap-2 ">
-                                    <input type="radio" name="agency" value="No" className="accent-purple-600" />
-                                    No
-                                </label>
-                                
-                            </div>
+                            <label className="flex items-center gap-2">
+                                <input type="radio" name="agency" value="Yes" defaultChecked className="accent-purple-600" />
+                                Yes
+                            </label>
+                            <label className="flex items-center gap-2 ">
+                                <input type="radio" name="agency" value="No" className="accent-purple-600" />
+                                No
+                            </label>
+                            
                         </div>
                     </div>
-
-                    <Button color="text-white" bgColor="bg-purple-700" text="Create Account" />
                 </div>
+
+                <Button color="text-white" bgColor="bg-purple-700" text="Create Account" link="/profile" />
             </div>
-        </>
+        </div>
     );
 }
 

@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp';
 import Profile from './pages/Profile';
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>
