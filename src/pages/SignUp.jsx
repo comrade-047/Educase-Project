@@ -9,7 +9,7 @@ function SignUp(){
             <div className="flex flex-col w-full flex-grow ">
 
                 <h1 
-                    className="text-3xl font-semibold mb-2"
+                    className="text-3xl font-semibold mb-4"
                 >   
                     Create your PopX account
                 </h1>
@@ -17,16 +17,16 @@ function SignUp(){
                 <div 
                     className="account-info-inputs flex flex-col gap-3 flex-grow "
                 >
-                    <Input placeholder="" label="Full Name" type="text"/>
-                    <Input placeholder="" label="Phone number" type="number" />
-                    <Input placeholder="" label="Email Address" type="email" />
-                    <Input placeholder="" label="Password" type="password" />
+                    <Input placeholder="" label="Full Name " important={true} type="text"/>
+                    <Input placeholder="" label="Phone number" important={true} type="number" />
+                    <Input placeholder="" label="Email Address" important={true} type="email" />
+                    <Input placeholder="" label="Password" important={true} type="password" />
                     <Input placeholder="" label="Company name" type="text" />
                     
                     <div
                         className="flex flex-col gap-2 mt-3"
                     >
-                        <label className=" font-medium">Are you an agency?</label>
+                        <label className="">Are you an agency?<span className="text-red-500 text-sm">*</span></label>
                         <div className="flex items-center gap-4">
 
                             <label className="flex items-center gap-2">
