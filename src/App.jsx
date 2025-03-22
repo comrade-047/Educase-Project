@@ -1,22 +1,23 @@
-import './App.css'
+import './App.css';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import LandingPage from './pages/Landing';
 import LoginScreen from './pages/LoginScreen';
-import Profile from './pages/Profile';
 import SignUp from './pages/SignUp';
+import Profile from './pages/Profile';
 
 function App() {
-
-  return(
-    <>
-      {/* <LandingPage/> 
-      <LoginScreen/> */}
-      {/* <SignUp/> */}
-      <Profile/>
-      {/* <NavigationBar/> */}
-
-    </>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+      <NavigationBar />
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;

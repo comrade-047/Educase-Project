@@ -1,6 +1,5 @@
-import React from "react";
-
-const Profile = () => {
+function Profile() {
+    
   return (
     <>
       <header className="bg-white pt-6 px-6 border-b shadow-sm">

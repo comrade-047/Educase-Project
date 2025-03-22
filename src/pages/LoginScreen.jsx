@@ -25,7 +25,8 @@ function LoginScreen() {
         >
             <Input placeholder="Enter email address" label="Email Address" />
             <Input placeholder="Enter password" label="Password" />
-            <Button text="Login" bgColor="bg-gray-300" color="text-white" />
+            <Button text="Login" bgColor="bg-gray-300" color="text-white" link="/profile" />
+
 
         </div>
       </div>

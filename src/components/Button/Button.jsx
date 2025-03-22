@@ -1,15 +1,16 @@
-function Button({ text,color,bgColor,onClick }) {
+import { Link } from 'react-router-dom';
 
-    return (
-
-      <button
-        className={`w-full py-1 px-2 rounded-lg font-semibold ${bgColor} ${color}`}
-        onClick={onClick}
-      >
-        {text}
-      </button>
-
-    );
-}
+function Button({ text, bgColor, color, link }) {
   
+  return link ? (
+    <Link to={link} className={`px-4 py-2 ${bgColor} ${color} rounded text-center`}>
+      {text}
+    </Link>
+  ) : (
+    <button className={`px-4 py-2 ${bgColor} ${color} rounded`}>
+      {text}
+    </button>
+  );
+}
+
 export default Button;

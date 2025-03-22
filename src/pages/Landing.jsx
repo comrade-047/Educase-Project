@@ -20,9 +20,9 @@ function LandingPage() {
 
         <div className="buttons flex flex-col gap-3 w-full">
 
-          <Button text="Create Account" bgColor="bg-purple-600" color="text-white" />
-          <Button text="Already Registered? Login" bgColor="bg-purple-300" color="text-black" />
-          
+          <Button text="Create Account" bgColor="bg-purple-600" color="text-white" link="/signup" />
+          <Button text="Already Registered? Login" bgColor="bg-purple-300" color="text-black" link="/login" />
+
         </div>
       </div>
     </div>
