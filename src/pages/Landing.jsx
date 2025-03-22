@@ -2,7 +2,7 @@ import Button from "../components/Button/Button";
 
 function LandingPage() {
   return (
-    <div className="flex flex-col justify-end items-center h-screen p-6 "> {/** this has to be removed and should be provided by the app component */}
+    <div className="flex flex-col justify-end items-center h-screen p-6 "> 
 
       <div className="flex flex-col w-full">
 
