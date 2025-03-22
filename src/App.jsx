@@ -1,4 +1,5 @@
 import './App.css'
+import NavigationBar from './components/NavigationBar/NavigationBar';
 import LandingPage from './pages/Landing';
 import LoginScreen from './pages/LoginScreen';
 import Profile from './pages/Profile';
@@ -12,6 +13,8 @@ function App() {
       <LoginScreen/> */}
       {/* <SignUp/> */}
       <Profile/>
+      {/* <NavigationBar/> */}
+
     </>
   );
 }
