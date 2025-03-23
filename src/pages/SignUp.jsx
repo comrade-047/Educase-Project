@@ -4,7 +4,7 @@ import Input from "../components/Input/Input";
 function SignUp(){
 
     return (
-        <div className="flex flex-col items-center h-screen p-6 ">
+        <div className="flex flex-col items-center h-screen p-6 max-w-md">
 
             <div className="flex flex-col w-full flex-grow ">
 

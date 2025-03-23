@@ -4,7 +4,7 @@ import Input from "../components/Input/Input";
 function LoginScreen() {
 
   return (
-    <div className="flex flex-col justify-start w-full h-screen items-center p-6  ">
+    <div className="flex flex-col justify-start max-w-md h-screen items-center p-6  ">
 
       <div className="flex flex-col w-full">
 

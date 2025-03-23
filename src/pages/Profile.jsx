@@ -2,11 +2,12 @@ function Profile() {
 
   return (
     <>
+      <div className="flex flex-col h-screen max-w-md ">
       <header className="bg-white py-6 px-6 border-b shadow-sm">
-        <h2 className="text-xl  ">Account Settings</h2>
+        <h2 className="text-xl pt-6 ">Account Settings</h2>
       </header>
 
-      <div className="bg-gray-100 px-6 flex flex-col min-h-screen py-6">
+      <div className="bg-gray-100 px-6 flex flex-col flex-1 py-6">
 
         <div className="flex items-center gap-2">
 
@@ -36,6 +37,7 @@ function Profile() {
 
         <hr />
 
+      </div>
       </div>
     </>
   );
