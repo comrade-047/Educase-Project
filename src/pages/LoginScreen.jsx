@@ -1,10 +1,11 @@
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
+import NavigationBar from "../components/NavigationBar/NavigationBar";
 
 function LoginScreen() {
 
   return (
-    <div className="flex flex-col justify-start max-w-md h-screen items-center p-6  ">
+    <div className="flex flex-col justify-between max-w-md h-screen items-center p-6 pb-0 ">
 
       <div className="flex flex-col w-full">
 
@@ -30,6 +31,9 @@ function LoginScreen() {
 
         </div>
       </div>
+
+      <NavigationBar />
+      
     </div>
   );
   

@@ -1,10 +1,11 @@
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
+import NavigationBar from "../components/NavigationBar/NavigationBar";
 
 function SignUp(){
 
     return (
-        <div className="flex flex-col items-center h-screen p-6 max-w-md">
+        <div className="flex flex-col items-center justify-between h-screen p-6 max-w-md pb-0">
 
             <div className="flex flex-col w-full flex-grow ">
 
@@ -44,6 +45,8 @@ function SignUp(){
 
                 <Button color="text-white" bgColor="bg-purple-700" text="Create Account" link="/profile" />
             </div>
+
+            <NavigationBar/>
         </div>
     );
 }

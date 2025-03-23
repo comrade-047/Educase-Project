@@ -1,8 +1,8 @@
 import Button from "../components/Button/Button";
-
+import NavigationBar from "../components/NavigationBar/NavigationBar";
 function LandingPage() {
   return (
-    <div className="flex flex-col justify-end items-center h-screen max-w-md p-6 "> 
+    <div className="flex flex-col justify-end items-center h-screen max-w-md p-6 pb-0"> 
 
       <div className="flex flex-col w-full">
 
@@ -25,6 +25,7 @@ function LandingPage() {
 
         </div>
       </div>
+      <NavigationBar />
     </div>
   );
 }
